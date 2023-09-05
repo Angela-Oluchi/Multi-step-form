@@ -53,12 +53,8 @@ body {
     padding-bottom: 25px;
 }
 
-#num:hover {
-    background-color: hsl(206, 94%, 87%);
-    color: black;
-}
-
-#num:active {
+#num:hover,
+#num.active {
     background-color: hsl(206, 94%, 87%);
     color: black;
 }
@@ -98,27 +94,30 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
-
+    
 }
 
 input {
     height: 30px;
     border-radius: 5px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
-    border: 0.5px solid hsl(231, 11%, 63%);
+    border-top: 1px solid black;
     margin-top: 3px;
     outline: none;
+    /* background-color: black; */
+    /* border: none; */
 }
 
 button {
-    width: 30%;
-    margin: 9rem 0 0 13rem;
     padding: 10px;
     border-radius: 5px;
     border: none;
     outline: none;
     background-color: hsl(213, 96%, 18%);
     color: hsl(0, 0%, 100%);
+    position: relative;
+    bottom: 80px;
+    left: 60rem;
 }
 
 button:hover {
