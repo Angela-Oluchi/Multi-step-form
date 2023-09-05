@@ -1,4 +1,5 @@
-html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,12 @@ html lang="en">
     <title>Multi-Form</title>
 </head>
 <body>
+    <div class="container">
     <div class="gen-container">
         <!-- div for the steps -->
-        <div class="gen-steps">
+        <div class="gen-steps" id="all-step">
         <div class="steps">
-            <a href="#index.html" class="active" id="num" onclick="changing()">1</a>
+            <a href="" id="num" class="active">1</a>
             <div class="steps-info">
             <p class="step"> STEP 1</p>
             <p class="step-info">YOUR INFO</p>
@@ -59,10 +61,17 @@ html lang="en">
         <label for="number" class="info-input">Phone Number
             <input type="text" placeholder="e.g +234 70203040506" required>
         </label>
-        <button>Next Step</button>
+       
     </form>
 </div>
 </div>
+<button id="next-btn" onclick="window.location.href='plan.html'">Next Step</button>
+
+</div>
+
+
+
+
 <script src="./app.js"></script>
 </body>
 </html>
