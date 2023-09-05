@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: hsl(217, 100%, 97%);
+}
+
+/* the general div */
+.gen-container {
+    display: flex;
+    gap: 2rem;
+    border-radius: 10px;
+    width: 50%;
+    height: 80vh;
+    margin: 4rem 0 0 20rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* the div houseing the steps */
+.gen-steps {
+    background-image: url(./img/bg-sidebar-desktop.svg);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    margin: 0.6rem 1rem 0 1rem;
+    width: 35%;
+    height: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#num {
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid hsl(206, 94%, 87%);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 17px;
+    color: hsl(0, 0%, 100%);
+}
+
+/* the steps */
+.steps {
+    display: flex;
+    gap: 0.6rem;
+    padding-bottom: 25px;
+}
+
+#num:hover {
+    background-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
+#num:active {
+    background-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
+.steps .steps-info {
+    font-size: 12px;
+}
+
+.step {
+    color: hsl(231, 11%, 63%);
+    font-size: 10px;
+}
+
+.step-info {
+    font-weight: 500;
+}
+
+/* personal info */
+.per-info {
+    padding-top: 32px;
+}
+
+.per-parag {
+    font-size: 11px;
+    color: hsl(231, 11%, 63%);
+    padding: 5px 0 30px 0;
+}
+
+/* the form part */
+.info-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+.info-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    border: 0.5px solid hsl(231, 11%, 63%);
+    margin-top: 3px;
+    outline: none;
+}
+
+button {
+    width: 30%;
+    margin: 9rem 0 0 13rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(213, 96%, 18%);
+    border: 1px solid hsl(213, 96%, 18%);
+}
