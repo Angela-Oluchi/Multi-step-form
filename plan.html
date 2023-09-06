@@ -49,28 +49,40 @@
         <!-- a div for the personal info -->
     <div class="info">
         <h2 class="per-info">SELECT YOUR PLAN</h2>
-        <p class="per-parag">You have the option of monthly or yearly billing.</p>
+        <p class="plan-parag">You have the option of monthly or yearly billing.</p>
 
-        <div class="">
-            <img src="" alt="">
-            <p>Arcade</p>
-            <p> $9/mo</p>
+        <div class="plan-details">
+            <img src="./img/icon-arcade.svg" alt="">
+            <div class="">
+            <p class="plan-p">Arcade</p>
+            <p class="plan-num"> $9/mo</p>
+            </div>
         </div>
-        <div class="">
-            <img src="" alt="">
-            <p>Advanced</p>
-            <p> $12/mo</p>
+        <div class="plan-details">
+            <img src="./img/icon-advanced.svg" alt="">
+            <div class="">
+            <p class="plan-p">Advanced</p>
+            <p class="plan-num"> $12/mo</p>
         </div>
-        <div class="">
-            <img src="" alt="">
-            <p> Pro</p>
-            <p> $15/mo</p>
+        </div>
+        <div class="plan-details">
+            <img src="./img/icon-pro.svg" alt="">
+            <div class="">
+            <p class="plan-p">Pro</p>
+            <p class="plan-num"> $15/mo</p>
+        </div>
         </div>
         
+        <div class="duration">
+            <p>  Monthly</p>
+            <i class="fa-solid fa-toggle-on"></i>
+            <p>Yearly</p>
+        </div>
 
     </div>
 </div>
-    <button id="next-btn" onclick="window.location.href='add-ones.html'">Next Step</button>
+    <button id="back-btn" onclick="window.location.href='index.html'">Go Back</button>
+    <button id="plan-btn" onclick="window.location.href='add-ones.html'">Next Step</button>
 
 
     </div>
